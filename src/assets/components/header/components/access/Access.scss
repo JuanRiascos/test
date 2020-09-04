@@ -1,0 +1,23 @@
+.access {
+	&__content {
+		display: flex;
+		flex: 0.5 1 12%;
+		justify-content: space-between;
+		&--item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			img {
+				width: 16%;
+			}
+			p {
+				padding-left: 5px;
+				font-size: 15px;
+			}
+			&:hover {
+				opacity: 0.4;
+			}
+		}
+	}
+}

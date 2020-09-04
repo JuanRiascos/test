@@ -1,0 +1,45 @@
+.dropdown {
+	width: 50%;
+	padding-right: 1.25rem;
+	position: relative;
+	&:hover .dropdown__list {
+		opacity: 1;
+		visibility: visible;
+	}
+	&--select {
+		padding: 0.4rem;
+		border-radius: .25rem;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1rem;
+		cursor: pointer;
+		color: $black;
+		border-bottom: 1px solid $black;
+		.select{
+			color:$whiteLight
+		}
+	}
+	&__list {
+		border-radius: .25rem;
+		position: absolute;
+		top: 110%;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.2s linear, visibility 0.2s linear;
+		&--item {
+			padding: 0.7rem;
+			font-size: 0.8rem;
+			&.principal{
+				font-size: .7rem;
+			}
+			&:hover {
+				color: $red;
+				cursor: pointer;
+			}
+		}
+	}
+}

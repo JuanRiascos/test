@@ -1,0 +1,187 @@
+@media screen and (max-width: 850px) {
+	.content {
+		height: 90%;
+	}
+
+	.contact {
+		height: 80%;
+		&__background {
+			display: none;
+		}
+	}
+	.floating {
+		&-form {
+			flex-direction: column;
+		}
+		&-label {
+			width: 100% !important;
+		}
+	}
+
+	.dropdown {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+
+	.header {
+		&__container {
+			margin-top: 23px !important;
+			width: 55% !important;
+		}
+		&__icon {
+			width: 16% !important;
+		}
+	}
+
+	.access {
+		&__content {
+			flex: 0.2 1 2% !important;
+			&--item {
+				img {
+					width: 50% !important;
+				}
+				p {
+					display: none;
+				}
+				&.wish {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.container {
+		padding: 0 !important;
+	}
+	.banner {
+		&__container {
+			width: 100% !important;
+			height: 3% !important;
+		}
+		&__content {
+			justify-content: space-evenly !important;
+			&__text {
+				-webkit-writing-mode: unset !important;
+				-ms-writing-mode: unset !important;
+				writing-mode: unset !important;
+				transform: inherit !important;
+				&--title {
+					align-self: center !important;
+					padding-bottom: 0 !important;
+					font-size: 10px !important;
+				}
+				&--option {
+					padding-top: 0 !important;
+					font-size: 12px !important;
+				}
+			}
+		}
+	}
+
+	nav {
+		position: absolute !important;
+		left: 0 !important;
+		margin-top: 15px !important;
+		&.active {
+			.nav {
+				&__container {
+					.menu--icons {
+						.close {
+							display: block !important;
+							color: $white;
+						}
+						.menu {
+							display: none !important;
+						}
+					}
+				}
+			}
+			.nav__list {
+				display: flex !important;
+			}
+		}
+	}
+
+	.nav {
+		&__container {
+			.menu--icons {
+				display: block !important;
+				.close {
+					display: none !important;
+					font-size: 2.3rem !important;
+				}
+				.menu {
+					font-size: 2.3rem !important;
+				}
+			}
+		}
+		&__list {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			flex-direction: column;
+			background-color: #191919;
+			z-index: 1000;
+			display: none !important;
+			li {
+				line-height: 6rem !important;
+				&:hover > .sub-menu {
+					opacity: 1;
+					visibility: visible;
+					max-height: initial;
+					line-height: initial;
+					background-color: #ccc;
+				}
+				a {
+					color: white;
+				}
+			}
+
+			.sub-menu {
+				position: initial !important;
+				border: 3px solid transparent;
+				border-left-color: $red;
+				border-top: none !important;
+				margin-left: 1rem;
+				max-height: 0;
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.banner {
+		&__content {
+			&__text {
+				&--title {
+					font-size: 0.5rem !important;
+				}
+				&--option {
+					font-size: 0.5rem !important;
+				}
+			}
+		}
+	}
+	.header {
+		&__container {
+			margin-top: 1.875 !important;
+		}
+		&__icon {
+			width: 25% !important;
+		}
+	}
+	.access {
+		&__content {
+			flex: 0.5 1 2% !important;
+			&--item {
+				img {
+					width: 49% !important;
+				}
+			}
+		}
+	}
+}
