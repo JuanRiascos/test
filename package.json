@@ -1,5 +1,5 @@
 {
-  "name": "blacksip-test",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,10 +28,9 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "start:local": "react-app-env --env-file=environments/.env.local start",
+    "start": "react-app-env --env-file=environments/.env.local start",
     "start:dev": "react-app-env --env-file=environments/.env.development start",
     "build:prod": "react-app-env --env-file=environments/.env.production build",
     "build:dev": "react-app-env --env-file=environments/.env.development build"

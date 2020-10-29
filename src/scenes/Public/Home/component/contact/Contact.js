@@ -5,11 +5,10 @@ import Select from '../../../../../assets/components/select/Select'
 import Button from '../../../../../assets/components/button/Button'
 
 import { menus as menuAction } from '../../../../../services/Menu/Actions'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 const Contact = () => {
 	const { post } = menuAction
-	const { menusPost,success } = useSelector((state) => state.menu)
 	const dispatch = useDispatch()
 
 	const [email, setEmail] = useState('')

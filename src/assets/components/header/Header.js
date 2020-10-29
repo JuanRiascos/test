@@ -21,7 +21,7 @@ const Header = () => {
 
 	useEffect(() => {
 		dispatch(getAll())
-	}, [])
+	}, [dispatch, getAll])
 	return (
 		<header>
 			<div className='header__container'>
