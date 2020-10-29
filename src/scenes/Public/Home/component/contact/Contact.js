@@ -30,13 +30,6 @@ const Contact = () => {
 
 	}
 
-	// useEffect(() => {
-	// 	effect
-	// 	return () => {
-	// 		cleanup
-	// 	}
-	// }, [input])
-
 	return (
 		<div className='contact'>
 			<div className='contact__form'>
